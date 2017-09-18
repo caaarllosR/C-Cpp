@@ -5,7 +5,7 @@
 using namespace std;
 
 
-int StringToNum(string s){
+int stringToNum(string s){
 
     int i = 0, l = 0, n = 0;
     char c;
@@ -25,7 +25,7 @@ int main () {
     string s;
 
     cin >> s;
-    n = StringToNum(s);
+    n = stringToNum(s);
 
     printf("%d", n);
 
