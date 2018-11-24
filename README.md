@@ -1,5 +1,8 @@
 # Códigos C/C++
 
+Códigos de estudo de algoritmos, testes de implementação e códigos do site URI Online Judge.
 
-Códigos de problemas do URI Online Judge e funções para problemas do dia a dia
+Algorithm study codes, implementation tests and codes from the URI Online Judge
 
+#URI
+link: https://www.urionlinejudge.com.br
