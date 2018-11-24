@@ -11,7 +11,7 @@ void searchPattern(string text, string pattern){
     while(i<(sizeT-k)){
 
         if(k==0){
-            printf("\npadrão encontrado a partir do indice: %d\n", (i-sizeP+1));
+            printf("\nPattern found from the index: %d\n", (i-sizeP+1));
             return;
         }
         if(pattern[j]==text[i]){
@@ -23,7 +23,7 @@ void searchPattern(string text, string pattern){
         }
         i++;
     }
-    printf("\npadrão não encontrado.\n");
+    printf("\nPattern not found.\n");
 }
 
 int main(){
@@ -37,7 +37,7 @@ string pattern = "bzbzbzu";
 string pattern2 = "lbzbzbzu";
 
 
-printf("Padrão 1 (bzbzbzu):"); searchPattern(text, pattern);
-printf("\n\nPadrão 2 (lbzbzbzu):"); searchPattern(text, pattern2);
+printf("Pattern 1 (bzbzbzu):"); searchPattern(text, pattern);
+printf("\n\nPattern 2 (lbzbzbzu):"); searchPattern(text, pattern2);
 
 }

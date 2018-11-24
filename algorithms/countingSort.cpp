@@ -53,7 +53,7 @@ int main()
     int k = maxValue(v, n);
     coutingSort(v, n, k);
 
-    printf("\nResultado:");
+    printf("\nResult:");
     for (int i = 0; i < n; i++)
     {
         printf(" %d", v[i]);

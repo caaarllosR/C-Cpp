@@ -1,0 +1,68 @@
+Airport registration successfully completed.
+
+Airport registration successfully completed.
+
+Airport registration successfully completed.
+
+Airport registration successfully completed.
+
+Airport registration successfully completed.
+
+Airport registration successfully completed.
+
+Airport registration successfully completed.
+
+Flight registration successfully completed.
+
+Flight registration successfully completed.
+
+Flight registration successfully completed.
+
+Flight registration successfully completed.
+
+Flight registration successfully completed.
+
+Flight registration successfully completed.
+
+Flight registration successfully completed.
+
+Flight registration successfully completed.
+
+Flight registration successfully completed.
+
+Flight registration successfully completed.
+
+Flight registration successfully completed.
+
+Flight registration successfully completed.
+
+Flight registration successfully completed.
+
+Airport registration successfully completed.
+
+Airport registration successfully completed.
+
+Flight registration successfully completed.
+
+Flight number: 1489; City depart: Belo Horizonte; City destination: São Paulo
+Flight number: 0024; City depart: Belo Horizonte; City destination: Vitória
+Flight number: 5736; City depart: Vitória; City destination: Rio de Janeiro
+Flight number: 7545; City depart: São Paulo; City destination: Porto Alegre
+Flight number: 3452; City depart: São Paulo; City destination: Curitiba
+Flight number: 5487; City depart: São Paulo; City destination: Rio de Janeiro
+Flight number: 1278; City depart: Rio de Janeiro; City destination: São Paulo
+Flight number: 3456; City depart: Rio de Janeiro; City destination: Belo Horizonte
+Flight number: 1700; City depart: Curitiba; City destination: Florianópolis
+Flight number: 4238; City depart: Curitiba; City destination: São Paulo
+Flight number: 3004; City depart: Porto Alegre; City destination: Curitiba
+Flight number: 2181; City depart: Porto Alegre; City destination: São Paulo
+Flight number: 6300; City depart: Florianópolis; City destination: Rio de Janeiro
+Flight number: 111; City depart: hsuahaaa; City destination: piracarucu
+
+Complete execution!
+
+The airport does not have registered flights.
+
+Airport code invalid.
+
+Flight number: 111; City destination: piracarucu

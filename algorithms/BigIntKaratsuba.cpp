@@ -43,13 +43,13 @@ void matchSize(string *s1, string *s2){
     *s2 = str2;
 }
 
-string removeZeros(string s){ // remove zeros digitados no inicio de numeros 
+string removeZeros(string s){ //remove zeros at the beginning of numbers 
 
     int i = 0;
-    if(s[0]==45){ //verifica se o primeiro digito é um sinal de menos
+    if(s[0]==45){ //checks if the first digit is a minus sign
         i = 1;
     }
-    while((s[i]==48)&&(s.size()>1)){ //remove zeros e caracteres indesejados inicio de um numero digitado
+    while((s[i]==48)&&(s.size()>1)){ //remove zeros and unwanted characters beginning of a typed number
         s.erase(s.begin());
     }
     return s;
@@ -236,20 +236,20 @@ int main () {
     int sizeStr;
     bool negative = false;
 
-    printf("\nMultiplicacao de inteiros grandes - Karatsuba\n");
-    printf("\nDigite o inteiro A: ");
+    printf("\nMultiplication of large integers - Karatsuba\n");
+    printf("\nEnter an integer A: ");
     cin >> str1;
-    printf("\nDigite o inteiro B: ");
+    printf("\nEnter an integer B: ");
     cin >> str2;
 
     str1 = removeZeros(str1);
     str2 = removeZeros(str2);
 
-    if((str1[0]==45)||(str2[0]==45)){ //verifica se um dos digitos é negativo
-        if((str1[0]==45)&&(str2[0]==45)){ //remove o sinal caso ambos sejam negativos
+    if((str1[0]==45)||(str2[0]==45)){ //check if one of the digits is negative
+        if((str1[0]==45)&&(str2[0]==45)){ //removes the signal if both are negative
             str1.erase(str1.begin());
             str2.erase(str2.begin());
-        }else if(str1[0]==45){ // guarda o sinal caso um dos digitos seja negativo
+        }else if(str1[0]==45){ // save the signal if one of the digits is negative
             negative = true;
             str1.erase(str1.begin());
         }else if(str2[0]==45){

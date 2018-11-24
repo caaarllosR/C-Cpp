@@ -48,20 +48,20 @@ int main()
     float listWeight = 0, listValue = 0, bagSize, weight, value, sumWeight = 0;
     int n, sizeV, sizeL, l = 0, k = 0, nItens = 0;
 
-    printf("\nDigite o tamanho da mochila: ");
+    printf("\nEnter the size of the backpack: ");
     scanf("%f", &bagSize);
-    printf("\nDigite a quantidade de itens a disposicao: ");
+    printf("\nEnter the quantity of items available: ");
     scanf("%d", &n);
     printf("\n");
 
     for (int i = 0; i < n; ++i)
     {
-        printf("\nDigite o peso do item %d: ", i);
+        printf("\nEnter item weight %d: ", i);
         scanf("%f", &weight);
-        printf("\nDigite o valor do item %d: ", i);
+        printf("\nEnter the value of the item %d: ", i);
         scanf("%f", &value);
 
-        if(weight<= bagSize){ //elimina itens de peso acima do suportado
+        if(weight<= bagSize){ //eliminate items of weight above the supported
 
             weights.push_back(weight);
 
@@ -76,7 +76,7 @@ int main()
 
     sizeV = weights.size();
 
-    while(l<sizeV){ //determina a qtd max de itens q cabem na mochila
+    while(l<sizeV){ //determines the qtd max of items that fit in the backpack
 
         if(sumWeight+weights[l] <= bagSize){
             sumWeight+=weights[l];
@@ -92,7 +92,7 @@ int main()
 
     for(int i = 1; i<=nItens; i++){
 
-        listComb = comb(sizeV, i); //gera uma combinacao de indices e lista-os
+        listComb = comb(sizeV, i); //generates a combination of indexes and lists them
 
         sizeL = listComb.size();
 
@@ -125,7 +125,7 @@ int main()
             }
         }
     }
-    printf("\n\nO indice dos itens da melhor escolha sao: %s", sList.c_str());
-    printf("\nPeso total dos itens: %.2f", weight);
-    printf("\nValor total dos itens: %.2f", value);
+    printf("\n\nThe index of the best choice items are: %s", sList.c_str());
+    printf("\nTotal item weight: %.2f", weight);
+    printf("\nTotal value of items: %.2f", value);
 }

@@ -49,7 +49,7 @@ int main()
 	v.assign(values, values+sizeV);
 	bucketSort(v);
 
-    printf("\nResultado:");
+    printf("\nResult:");
     for (int i = 0; i < sizeV; i++)
     {
         printf(" %g", v[i]);

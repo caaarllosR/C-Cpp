@@ -1,5 +1,4 @@
-/* QuickSort after tail call elimination and further
-   optimization */
+
 #include <stdio.h>
 #include <string>
 #include <algorithm>
@@ -43,11 +42,6 @@ int compareCodeStr(string code1, string code2)
     return 0;
 }
 
-/* This function takes last element as pivot, places
-   the pivot element at its correct position in sorted
-    array, and places all smaller (smaller than pivot)
-   to left of pivot and all greater elements to right
-   of pivot */
 int partition (string arr[], int low, int high)
 {
     string pivot = arr[high];    // pivot
@@ -67,16 +61,10 @@ int partition (string arr[], int low, int high)
     return (i + 1);
 }
 
-/* The main function that implements QuickSort
- codeWords[] --> Array to be sorted,
-  low  --> Starting index,
-  high  --> Ending index */
 void quickSort(string arr[], int low, int high)
 {
     while (low < high)
     {
-        /* pi is partitioning index, codeWords[p] is now
-           at right place */
         int pi = partition(arr, low, high);
 
         if (pi - low < high - pi)
@@ -92,7 +80,6 @@ void quickSort(string arr[], int low, int high)
     }
 }
 
-/* Function to print an array */
 void printArray(string arr[], int size)
 {
     for (int i=0; i < size; i++)
@@ -100,7 +87,6 @@ void printArray(string arr[], int size)
     printf("\n");
 }
 
-// Driver program to test above functions
 int main()
 {
     string arr[] = {"aac", "0zzzz", "aacfsdf", "fccsdf", "0zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz", "aac", "aaccvfsdf", "c",

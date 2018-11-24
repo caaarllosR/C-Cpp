@@ -72,7 +72,7 @@ int main()
     int size = sizeof(v)/sizeof(v[0]);
     radixSort(v, size);
 
-    printf("\nResultado:");
+    printf("\nResult:");
     for (int i = 0; i < size; i++)
     {
         printf(" %d", v[i]);

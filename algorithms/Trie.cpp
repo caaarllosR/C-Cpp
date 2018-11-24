@@ -89,14 +89,14 @@ string busca(Trie_No *no, string palavra)
 		indice = ((int)palavra[i] - (int)'a');
 		if (atual->filhos[indice] == NULL)
 		{
-            return "palavra não encontrada";
+            return "word not found";
 		}
         atual = atual->filhos[indice];
         if(atual->valor == palavra.substr(i, atual->valor.size())){
             i += atual->valor.size() - 1;
         }
         else{
-            return "palavra não encontrada";
+            return "word not found";
         }
 	}
 	if(atual->folha){
@@ -107,11 +107,11 @@ string busca(Trie_No *no, string palavra)
         if(atual->ehZip){
             return "sim";
         }else{
-            return atual->indice; //retorna os indices das ocorrências da palavra no texto usado para gerar a Trie
+            return atual->indice; //returns the index of each occurrence of the word in the text used to generate the Trie
         }
 	}
 	 else{
-        return "palavra não encontrada";
+        return "word not found";
     }
 }
 
@@ -161,7 +161,7 @@ int main()
 	int i = 0, sizeP = 0;
 	string opt = "s", str, strText;
 
-	printf("\nDigite o texto de entrada: ");
+	printf("\nEnter input text: ");
 	getline(cin,strText);
 
 	char *text = (char*)malloc(strText.size());
@@ -194,21 +194,21 @@ int main()
     for (it=w.begin(); it!=w.end(); ++it)
 	{
         str = *it;
-        printf("\nIndices das ocorrências da palavra \"%s\" no texto (sem compressão): %s\n", str.c_str(), busca(trie1, str).c_str());
-        printf("A paralavra esta na Trie comprimida?: %s\n", busca(trie2, str).c_str());
+        printf("\nIndex of occurrences of the word \"%s\" in the text (uncompressed): %s\n", str.c_str(), busca(trie1, str).c_str());
+        printf("Is the word in Trie compressed?: %s\n", busca(trie2, str).c_str());
     }
 
     printf("\n");
     while (opt!=("n")&&opt!=("N"))
     {
-        printf("\nDeseja buscar por mais alguma palavra? (S|N) :");
+        printf("\nDo you want to search for another word? (Y|N) :");
         cin >> opt;
         if(opt==("s")||opt==("S")){
-            printf("\n\n\nTexto: %s", strText.c_str());
-            printf("\n\nDigite a palavra a ser encontrada: ");
+            printf("\n\n\nText: %s", strText.c_str());
+            printf("\n\nEnter the word to be found: ");
             cin >> str;
-            printf("\nIndices das ocorrências da palavra \"%s\" no texto (sem compressão): %s\n", str.c_str(), busca(trie1, str).c_str());
-            printf("A paralavra esta na Trie comprimida?: %s\n\n\n", busca(trie2, str).c_str());
+            printf("\nIndex of occurrences of the word \"%s\" in the text (uncompressed): %s\n", str.c_str(), busca(trie1, str).c_str());
+			printf("Is the word in Trie compressed?: %s\n\n\n", busca(trie2, str).c_str());
         }
 
     }

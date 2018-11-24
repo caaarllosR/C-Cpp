@@ -21,7 +21,7 @@ void BoyerMoore(string text, string pattern){
     do{
         if(text[i] == pattern[j]){
             if(j == 0){
-                    printf("\npadrão encontrado a partir do indice: %d\n", i);
+                    printf("\nPattern found from the index: %d\n", i);
                     return;
             }else {
                 i--;
@@ -32,7 +32,7 @@ void BoyerMoore(string text, string pattern){
             j = sizeP - 1;
         }
     }while(i < (sizeT));
-    printf("\npadrão não encontrado.\n");
+    printf("\nPattern not found.\n");
 }
 
 
@@ -47,7 +47,7 @@ string pattern = "bzbzbzu";
 string pattern2 = "lbzbzbzu";
 
 
-printf("Padrão 1 (bzbzbzu):"); BoyerMoore(text, pattern);
-printf("\n\nPadrão 2 (lbzbzbzu):"); BoyerMoore(text, pattern2);
+printf("Pattern 1 (bzbzbzu):"); BoyerMoore(text, pattern);
+printf("\n\nPattern 2 (lbzbzbzu):"); BoyerMoore(text, pattern2);
 
 }
